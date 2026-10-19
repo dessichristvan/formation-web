@@ -1,0 +1,79 @@
+<!Doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire d'inscription</title>
+    </head>
+    <body>
+        <h1>Formulaire d'inscription</h1>
+            <p>Les champs avec * sont obligatoires.</p>
+            <form method="post">
+                <fieldset>
+                  <legend>Identité</legend>
+                    <label for="nom">Nom*</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="prenoms">Prénoms*</label>
+                    <input type="text" id="prenoms" name="prenoms" required>
+                    <label for="date_naissance">Date de naissance (16 ans minimun)*</label>
+                    <input type="date" id="date_naissance" name="date_naissance" min="2010-10-18" required>
+                    <label for="lieu_naissance">Lieu de naissance*</label>
+                    <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+                    <label for="piece_identite">Numéro de la pièce d'identité*</label>
+                    <input type="text" id="piece_identite" name="piece_identite" required>
+                    <label for="photo">Photo d'identité*</label>
+                    <input type="file" id="photo" name="photo" required>
+                </fieldset>
+                <fieldset>
+                   <legend>Coordonnées</legend>
+                    <label for="tel">Téléphone (10 chiffres)*</label>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required>
+                    <label for="email">e-mail*</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="commune">Commune*</label>
+                    <select id="commune" name="commune" required>
+                      <option value="">-- Choisir une commune --</option>
+                      <option value="Cocody">Cocody</option>
+                      <option value="Marcory">Marcory</option>
+                      <option value="Treichville">Treichville</option>
+                      <option value="Yopougon">Yopougon</option>
+                      <option value="Koumassi">Koumassi</option>
+                      <option value="Bingerville">Bingerville</option>
+                    </select>
+                    <label for="adresse">Adresse (facultatif)</label>
+                    <input type="text" id="adresse" name="adresse" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Formation</legend>
+                      <p>Catégorie de permis*</p>
+                      <input type="radio" id="a" name="categorie" value="A">
+                      <label for="a">A (moto)</label>
+                      <input type="radio" id="b" name="categorie" value="B">
+                      <label for="b">B (voiture)</label>
+                      <input type="radio" id="c" name="categorie" value="C">
+                      <label for="c">C (poids lour)</label>
+                      <p>Formule*</p>
+                      <input type="radio" id="semaine" name="semaine" value="semaine">
+                      <label for="semaine">Semaine</label>
+                      <input type="radio" id="weekend" name="weekend" value="weekend">
+                      <label for="weekend">Week-end</label>
+                      <p>Options faculatatives</p>
+                      <input type="checkbox" id="opt_code" name="options" value="code">
+                      <label for="opt_code">Code en ligne</label>
+                      <input type="checkbox" id="opt_nuit" name="options" value="nuit">
+                      <label for="opt_nuit">Conduite de nuit</label>
+                      <p>Date de début</p>
+                      <label for="date_debut">Date de début*</label>
+                      <input type="date" id="date_debut" name="date_debut" min="2026-10-19" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Validation</legend>
+                    <input type="checkbox" id="reglement" name="reglement" value="accepte">
+                    <label for="reglement">J'ai lu et j'accepte le règlement intérieur*</label>
+                    <button type="submit">Envoyer</button>
+                    <button type="submit">Effacer</button>
+                </fieldset>
+            </form>
+    </body>
+
+</html>
