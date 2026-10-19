@@ -1,7 +1,7 @@
-# formation-web
+# formation-web 
+ 
+Depot de mes travaux de formation web. 
 
-Dépôt de mes travaux de formation web.
-
-## Contenu
-
-- `tp2-Dessi Christ Van Emmanuel/` : TP2, formulaire d'inscription
+## contenu
+ 
+- `s02-tp2/` : TP2, formulaire d'inscription 
